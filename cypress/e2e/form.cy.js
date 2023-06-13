@@ -17,7 +17,7 @@ describe('Form', () => {
       
       cy.get(".subjects-auto-complete__value-container").type("Econ{enter}");
       cy.contains('label','Music').click();
-      cy.get('input[type=file]').selectFile('cypress/picture1.png')
+      cy.get('input[type=file]').selectFile('files/picture1.png')
       cy.get("#currentAddress").type("Grove street 342");
       cy.contains('div','Select State').click({force: true});
       cy.contains('div','NCR').click({force: true});
